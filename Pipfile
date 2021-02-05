@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 django = "*"
+djangorestframework = "*"
+django-rest-auth = "*"
 
 [dev-packages]
 black = "==19.10b0"
