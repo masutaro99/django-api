@@ -12,7 +12,7 @@ from .serializers import TaskSerializer, UserSerializer
 class UserViewSet(viewsets.ModelViewSet):
   queryset = User.objects.all()
   serializer_class = UserSerializer
-  permisson_classesd = (AllowAny,)
+  permisson_classes = (AllowAny,)
 
 class ManageUserView(generics.RetrieveUpdateAPIView):
   serializer_class = UserSerializer
