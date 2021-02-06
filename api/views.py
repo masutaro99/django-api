@@ -26,4 +26,4 @@ class TaskViewSet(viewsets.ModelViewSet):
   queryset = Task.objects.all()
   serializer_class = TaskSerializer
   authentication_classes = (TokenAuthentication,)
-  permisson_classes = (IsAuthenticated,)
+  permission_classes = (IsAuthenticated,)
