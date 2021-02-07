@@ -1,3 +1,4 @@
 {
+  "python.formatting.blackpath": "/Library/Frameworks/Python.framework/Versions/3.6/bin/black",
   "python.formatting.provider": "black"
 }
