@@ -7,12 +7,13 @@ from django.contrib.auth.models import User
 from .models import Task
 from rest_framework import viewsets
 from .serializers import TaskSerializer, UserSerializer
+from .ownpermissions import ProfilePermission
 
 # Create your views here.
 class UserViewSet(viewsets.ModelViewSet):
   queryset = User.objects.all()
   serializer_class = UserSerializer
-  permisson_classes = (AllowAny,)
+  permission_classes = (ProfilePermission,)
 
 class ManageUserView(generics.RetrieveUpdateAPIView):
   serializer_class = UserSerializer
